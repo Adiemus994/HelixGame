@@ -35,8 +35,8 @@ public class BallControler : MonoBehaviour
         {
             foreach (var platform in platforms.Skip(1))
             {
-                platform.SetActive(ball.transform.position.y >= platform.transform.position.y);
-                Debug.Log(string.Format("Ball{0}\t Platfroms: {1}\tSetActive({2})",ball.transform.position.y, platform.transform.position.y, ball.transform.position.y >= platform.transform.position.y));
+                platform.SetActive(ball.transform.position.y +7.20f>= platform.transform.position.y);
+                Debug.Log(string.Format("Ball{0}\t Platfroms: {1}\t localposition ball{2}\t localposition{3}",ball.transform.position.y, platform.transform.position.y, ball.transform.localPosition.y, platform.transform.localPosition.y));
             }
         }
     }
