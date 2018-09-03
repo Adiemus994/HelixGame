@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,7 @@ public class BallControler : MonoBehaviour
     private Rigidbody ball;
     private IList<GameObject> platforms;
     private bool isForce = false;
+    private float points=0;
 
     private void Start()
     {
@@ -33,10 +35,17 @@ public class BallControler : MonoBehaviour
 
         if (platforms.Count > 1)
         {
-            foreach (var platform in platforms.Skip(1))
+            foreach (var platform in platforms.Skip(1).ToList())
             {
-                platform.SetActive(ball.transform.position.y +7.20f>= platform.transform.position.y);
-                Debug.Log(string.Format("Ball{0}\t Platfroms: {1}\t localposition ball{2}\t localposition{3}",ball.transform.position.y, platform.transform.position.y, ball.transform.localPosition.y, platform.transform.localPosition.y));
+                if (ball.transform.position.y + 7.20f < platform.transform.position.y)
+                {
+                    platform.SetActive(false);
+                    platforms.Remove(platform);
+                    points++;
+                    Debug.Log(string.Format("Usunieto:{0} ", points));
+                    // Debug.Log(string.Format("Ball{0}\t Platfroms: {1}\t localposition ball{2}\t localposition{3}",ball.transform.position.y, platform.transform.position.y, ball.transform.localPosition.y, platform.transform.localPosition.y));
+
+                }
             }
         }
     }
