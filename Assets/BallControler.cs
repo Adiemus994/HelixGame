@@ -30,6 +30,7 @@ public class BallControler : MonoBehaviour
      void force()
     {
         isForce = false;
+        ball.velocity = new Vector3(0f, 0f, 0f);
         ball.AddForce(Vector3.up * speed, ForceMode.Impulse);
     }
 
