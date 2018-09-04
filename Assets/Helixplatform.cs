@@ -29,7 +29,7 @@ public class Helixplatform : MonoBehaviour {
             //foreach (var platform in platforms.Skip(1).ToList())
            // {
             //platforms.Skip(1);
-            if (ball.transform.position.y  < platforms.Last().transform.position.y)
+            if (ball.transform.position.y -0.3f < platforms.Last().transform.position.y)
             {
                     platforms.Last().SetActive(false);
                     platforms.Remove(platforms.Last());
@@ -64,26 +64,26 @@ public class Helixplatform : MonoBehaviour {
 
     public static void GameFinished()
     {
-        GUI.Box(new Rect(400, 170, 100, 100), "Game finished! \n Congrats!");
-        if (GUI.Button(new Rect(410, 210, 80, 20), "Play again"))
+        GUI.Box(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 150, 300, 300), "Game finished! \n Congrats!");
+        if (GUI.Button(new Rect(Screen.width / 2 - 140, Screen.height / 2 - 110, 280, 120), "Play again"))
         {
             SceneManager.LoadScene("FirstScene");
             gameover = false;
         }
-        if (GUI.Button(new Rect(410, 240, 80, 20), "QuitGame"))
+        if (GUI.Button(new Rect(Screen.width / 2 - 140, Screen.height / 2 +10, 280, 120), "QuitGame"))
         {
             Application.Quit();
         }
     }
     private void OnGUI()
-    {
+    {          
            // GUIStyle mygui = new GUIStyle();
             //mygui.fontSize = 30;
             //mygui.alignment = TextAnchor.UpperCenter;
            
             //GUI.TextArea(new Rect(center, 30, 20, 20), "Score: "+points, mygui);
           
-            GUI.Label(new Rect(Screen.width /2 - 50, Screen.height -480, 100, 50), "Score: "+points,mygui);
+            GUI.Label(new Rect(Screen.width /2 - 25, Screen.height /9 -12.5f, 50, 25), "Score: "+points,mygui);
 
             if (gameover == true)
             {
