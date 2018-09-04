@@ -49,6 +49,17 @@ public class BallControler : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-    }
 
+        if (collision.gameObject.tag == "Theend")
+        {
+            if (SceneManager.sceneCountInBuildSettings - 1 > SceneManager.GetActiveScene().buildIndex)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else
+            {
+                Helixplatform.gameover = true;
+            }
+        }
+    }
 }
