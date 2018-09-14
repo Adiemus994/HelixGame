@@ -8,7 +8,7 @@ public class Rotation : MonoBehaviour{
 
     private void OnMouseDrag()
     {
-        float rotx = Input.GetAxis("Mouse X") * speed ;
+        float rotx = Input.GetAxis("Mouse X") * speed *0.5f ;
 
         transform.Rotate(Vector3.up, -rotx);
     }

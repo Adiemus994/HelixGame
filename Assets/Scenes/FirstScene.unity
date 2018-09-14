@@ -3292,7 +3292,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38440
+  m_Name: pb_Mesh-1266
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3618,7 +3618,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38666
+  m_Name: pb_Mesh-1268
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10553,7 +10553,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38038
+  m_Name: pb_Mesh-1278
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -11894,7 +11894,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38080
+  m_Name: pb_Mesh-1280
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -12925,7 +12925,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4881642151655896, guid: 56f0580cf868ed54f9c3ba37ed77a178, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.00024836883
       objectReference: {fileID: 0}
     - target: {fileID: 4881642151655896, guid: 56f0580cf868ed54f9c3ba37ed77a178, type: 2}
       propertyPath: m_LocalRotation.y
@@ -13254,6 +13254,18 @@ Prefab:
     - target: {fileID: 1383367034309716, guid: 56f0580cf868ed54f9c3ba37ed77a178, type: 2}
       propertyPath: m_Name
       value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881642151655896, guid: 56f0580cf868ed54f9c3ba37ed77a178, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881642151655896, guid: 56f0580cf868ed54f9c3ba37ed77a178, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881642151655896, guid: 56f0580cf868ed54f9c3ba37ed77a178, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56f0580cf868ed54f9c3ba37ed77a178, type: 2}
@@ -25018,7 +25030,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38384
+  m_Name: pb_Mesh-1270
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -29078,7 +29090,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38478
+  m_Name: pb_Mesh-1282
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -29559,7 +29571,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38528
+  m_Name: pb_Mesh-1276
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -32868,7 +32880,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38100
+  m_Name: pb_Mesh-1272
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -36063,12 +36075,35 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!1 &1785495924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1383367034309716, guid: 56f0580cf868ed54f9c3ba37ed77a178,
+    type: 2}
+  m_PrefabInternal: {fileID: 672892812}
+--- !u!95 &1785495925
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785495924}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7633f9be47763d34aa0baa7a4593542e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!43 &1785635611
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38544
+  m_Name: pb_Mesh-1274
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
